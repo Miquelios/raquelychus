@@ -40,6 +40,44 @@
         .container { display: flex; gap: 20px; align-items: flex-start; margin-top: 20px; }
         .text-box { background: white; padding: 20px; flex: 2; border: 1px solid #ccc; border-radius: 4px; }
         .image-placeholder { background: #ddd; width: 150px; height: 150px; flex-shrink: 0; border: 2px dashed #999; display: flex; align-items: center; justify-content: center; }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column; /* Stack sidebar on top of content */
+            }
+
+            nav {
+                position: relative; /* Stop it from floating */
+                width: 100%;
+                height: auto;
+                padding: 10px;
+            }
+
+            nav ul {
+                display: flex; /* Lay menu items horizontally */
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            main {
+                margin-left: 0; /* Remove the gap meant for the sidebar */
+            }
+
+            section {
+                padding: 30px 15px; /* Reduce padding for smaller screens */
+            }
+
+            .container {
+                flex-direction: column; /* Stack text rectangle and image square */
+                align-items: center;
+            }
+
+            .text-box {
+                width: 100%; /* Make text take full width */
+            }
+        }
     </style>
 </head>
 <body>

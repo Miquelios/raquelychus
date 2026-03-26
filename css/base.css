@@ -3,16 +3,11 @@
    RAQUEL & CHUS · Boda 2026
    ========================================= */
 
-/* --- Google Fonts --- */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
-/*
-  Amsterdam Four se carga como fuente local (descárgala y ponla en /fonts/AmsterdamFour.ttf)
-  Si no la tienes aún, usará Cormorant Garamond italic como fallback elegante.
-*/
 @font-face {
   font-family: 'Amsterdam Four';
-  src: url('fonts/AmsterdamFour.ttf') format('truetype');
+  src: url('fonts/amsterdam.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -35,7 +30,8 @@
   --card-bg:      rgba(246, 242, 235, 0.84);  /* arena con transparencia */
   --border:       rgba(107, 31, 43, 0.15);    /* garnacha muy suave */
 
-  --max-width:    800px;
+  --max-width:    1000px;
+  --max-width-inner:    800px;
   --section-gap:  clamp(48px, 8vw, 80px);
 }
 
@@ -51,17 +47,17 @@ body {
   color: var(--text);
   line-height: 1.75;
 
-  background-image: url('../images/background.jpg');
+  /* background-image: url('../images/background.jpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   background-color: var(--arena);     /* fallback */
 }
 
 /* --- Tipografía --- */
 h1, h2, h3 {
-  font-family: 'Amsterdam Four', 'Cormorant Garamond', serif;
+  font-family: 'Amsterdam Four', serif;
   font-weight: normal;
   line-height: 1.15;
 }
@@ -85,22 +81,32 @@ main {
 /* --- Tarjeta de sección --- */
 section {
   width: 100%;
+  max-width: var(--max-width-inner);
   display: flex;
   justify-content: center;
 }
 
-.section-inner {
+.section-outer {
   width: 100%;
-  max-width: var(--max-width);
-  background: var(--card-bg);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.6);
-  border-radius: 4px;
+  /* max-width: var(--max-width); */
   padding: var(--section-gap) clamp(28px, 6vw, 68px);
   margin: 20px 0;
   text-align: center;
-  box-shadow: 0 4px 32px rgba(75, 44, 93, 0.07);
+}
+
+.section-inner {
+  width: 100%;
+  /* max-width: var(--max-width-inner); */
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  /* backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); */
+  /* border: 1px solid rgba(255,255,255,0.6); */
+  border-radius: 20px;
+  padding: var(--section-gap) clamp(28px, 6vw, 68px);
+  margin: 20px 0;
+  text-align: center;
+  /* box-shadow: 0 4px 32px rgba(75, 44, 93, 0.07); */
 }
 
 /* Etiqueta de sección */

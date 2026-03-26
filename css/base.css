@@ -51,11 +51,11 @@ body {
   color: var(--text);
   line-height: 1.75;
 
-  background-image: url('background.jpg');
-  background-repeat: repeat;          /* tesela la imagen en lugar de estirarla */
-  background-size: 600px auto;        /* tamaño fijo: ajústalo a tu foto */
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
-  background-position: center top;
+  background-repeat: no-repeat;
   background-color: var(--arena);     /* fallback */
 }
 

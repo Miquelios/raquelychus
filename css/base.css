@@ -15,30 +15,48 @@
 /* --- Paleta oficial de la boda --- */
 :root {
   /* Principales */
-  --garnacha:     #6B1F2B;   /* rojo vino */
-  --olivo:        #778B6F;   /* verde olivo claro */
+/* rojo vino */
+  --garnacha: #6B1F2B;
+/* verde olivo claro */
+  --olivo: #778B6F;
+  
 
   /* Secundarios */
-  --berrueco:     #4B2C5D;   /* púrpura atardecer */
-  --parra:        #4F6B4A;   /* verde viñedo intenso */
-  --majorero:     #D4AF37;   /* dorado sol */
-  --arena:        #F6F2EB;   /* beige arena cálido */
+  /* púrpura atardecer */
+  --berrueco: #4B2C5D;
+  /* verde viñedo intenso */
+  --parra: #4F6B4A;
+  /* dorado sol */
+  --majorero: #D4AF37;
+  /* beige arena cálido */
+  --arena: #F6F2EB;
 
   /* Utilidades */
-  --text:         #3a2a2a;
-  --text-light:   #6a5a5a;
-  --card-bg:      rgba(246, 242, 235, 0.84);  /* arena con transparencia */
-  --border:       rgba(107, 31, 43, 0.15);    /* garnacha muy suave */
+  --text: #3a2a2a;
+  --text-light: #6a5a5a;
+  /* arena con transparencia */
+  --card-bg: rgba(246, 242, 235, 0.84);
+  /* garnacha muy suave */
+  --border: rgba(107, 31, 43, 0.15);
 
-  --max-width:    1000px;
-  --max-width-inner:    800px;
-  --section-gap:  clamp(48px, 8vw, 80px);
+  --max-width: 1000px;
+  --max-width-inner: 800px;
+  --section-gap: clamp(48px, 8vw, 80px);
 }
 
 /* --- Reset --- */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
 
 /* --- Body + fondo --- */
 body {
@@ -52,23 +70,49 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat; */
-  background-color: var(--arena);     /* fallback */
+  background-color: var(--arena);
+  /* fallback */
 }
 
 /* --- Tipografía --- */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Amsterdam Four', serif;
   font-weight: normal;
   line-height: 1.15;
 }
 
-h1 { font-size: clamp(3rem, 9vw, 6.5rem); letter-spacing: 0.05em; color: var(--garnacha); }
-h2 { font-size: clamp(1.8rem, 4vw, 3rem);  letter-spacing: 0.06em; color: var(--garnacha); margin-bottom: 1.2rem; }
-h3 { font-size: 1.4rem; letter-spacing: 0.07em; color: var(--parra); margin-bottom: 0.6rem; }
+h1 {
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  letter-spacing: 0.05em;
+  color: var(--garnacha);
+}
 
-p  { font-size: 1.3rem; color: var(--text); margin-bottom: 1rem; font-weight: 300; }
+h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: 0.06em;
+  color: var(--garnacha);
+  margin-bottom: 1.2rem;
+}
 
-a  { color: var(--garnacha); }
+h3 {
+  font-size: 1.4rem;
+  letter-spacing: 0.07em;
+  color: var(--parra);
+  margin-bottom: 0.6rem;
+}
+
+p {
+  font-size: 1.3rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+a {
+  color: var(--garnacha);
+}
 
 /* --- Layout principal --- */
 main {

@@ -3,27 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raquel & Chus · 10 Junio 2026</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Raquel &amp; Manuel · 10 Junio 2026</title>
+
+  <!--
+    CSS separado en tres ficheros:
+      css/base.css       → variables, reset, tipografía, layout global
+      css/sections.css   → estilos por sección
+      css/responsive.css → media queries
+  -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
 
   <main>
 
-    <!-- HERO -->
+    <!-- ==================== HERO ==================== -->
     <section id="hero">
       <div class="section-inner">
-        <p class="hero-date">10 · Junio · 2026</p>
+        <span class="section-label">10 · Junio · 2026</span>
         <h1 class="hero-names">Raquel<br>&amp; Chus</h1>
+        <div class="divider">✦</div>
         <span class="hero-scroll">Descubre nuestra boda</span>
       </div>
     </section>
 
-    <!-- NUESTRA HISTORIA -->
+    <!-- ==================== HISTORIA ==================== -->
     <section id="historia">
       <div class="section-inner">
         <span class="section-label">01 — Nuestra historia</span>
         <h2>Cómo empezó todo</h2>
+        <div class="divider">✦</div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -37,11 +48,12 @@
       </div>
     </section>
 
-    <!-- FECHA & CUENTA ATRÁS -->
+    <!-- ==================== FECHA ==================== -->
     <section id="fecha">
       <div class="section-inner">
         <span class="section-label">02 — La fecha</span>
         <div class="fecha-big">10 de Junio de 2026</div>
+        <div class="divider">✦</div>
         <div class="fecha-sub">Faltan...</div>
         <div class="countdown">
           <div class="countdown-block">
@@ -64,11 +76,12 @@
       </div>
     </section>
 
-    <!-- LUGAR -->
+    <!-- ==================== LUGAR ==================== -->
     <section id="lugar">
       <div class="section-inner">
         <span class="section-label">03 — El lugar</span>
         <h2>Plaza de España, Barcelona</h2>
+        <div class="divider">✦</div>
         <p>
           Un enclave emblemático en el corazón de Barcelona, rodeado de historia y belleza
           arquitectónica. Nos reuniremos aquí para celebrar este día tan especial juntos.
@@ -77,12 +90,18 @@
       </div>
     </section>
 
-    <!-- ITINERARIO -->
+    <!-- ==================== ITINERARIO ==================== -->
     <section id="itinerario">
       <div class="section-inner">
         <span class="section-label">04 — Itinerario</span>
         <h2>El día</h2>
+        <div class="divider">✦</div>
         <div class="itinerario-img-wrap">
+          <!--
+            Sustituye por:
+            <img src="itinerario-horizontal.jpg" class="img-desktop" alt="Itinerario">
+            <img src="itinerario-vertical.jpg"   class="img-mobile"  alt="Itinerario">
+          -->
           <div class="placeholder-img" style="min-height: 200px;">
             <span>Imagen itinerario</span>
           </div>
@@ -90,24 +109,26 @@
       </div>
     </section>
 
-    <!-- CONFIRMACIÓN -->
+    <!-- ==================== CONFIRMACIÓN ==================== -->
     <section id="confirmacion">
       <div class="section-inner">
         <span class="section-label">05 — Confirmación</span>
         <h2>¿Nos acompañas?</h2>
+        <div class="divider">✦</div>
         <p>Por favor, confirma tu asistencia antes del 15 de mayo de 2026.</p>
         <!--
-          Cambia el href por el link de tu formulario (Google Forms, Typeform, etc.)
+          Cambia el href por tu formulario: Google Forms, Typeform, etc.
         -->
         <a class="btn-confirmar" href="#" target="_blank">Confirmar asistencia</a>
       </div>
     </section>
 
-    <!-- DRESS CODE -->
+    <!-- ==================== DRESS CODE ==================== -->
     <section id="dresscode">
       <div class="section-inner">
         <span class="section-label">06 — Dress code</span>
         <h2>Elegancia natural</h2>
+        <div class="divider">✦</div>
         <p>
           Queremos que estéis cómodos y que brindéis con nosotros sintiéndoos bien.
           Os pedimos una etiqueta semiformal en tonos tierra, verdes suaves, blancos rotos
@@ -120,11 +141,12 @@
       </div>
     </section>
 
-    <!-- REGALOS -->
+    <!-- ==================== REGALOS ==================== -->
     <section id="regalos">
       <div class="section-inner">
         <span class="section-label">07 — Regalos</span>
         <h2>Si queréis hacernos un regalo</h2>
+        <div class="divider">✦</div>
         <div class="two-col">
           <div class="two-col-text">
             <p>
@@ -132,8 +154,8 @@
               Pero si queréis hacernos un obsequio, hemos preparado una lista
               en la que podréis encontrar algo que se adapte a vosotros.
             </p>
-            <!-- Añade aquí un link a vuestra lista de bodas -->
-            <a href="#" style="color: var(--sage-dark); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">Ver lista de bodas →</a>
+            <!-- Sustituye href por el link de vuestra lista de bodas -->
+            <a href="#">Ver lista de bodas →</a>
           </div>
           <div class="two-col-img">
             <div class="placeholder-img"><span>Imagen</span></div>
@@ -142,11 +164,12 @@
       </div>
     </section>
 
-    <!-- FOTOGRAFÍAS -->
+    <!-- ==================== FOTOGRAFÍAS ==================== -->
     <section id="fotografias">
       <div class="section-inner">
         <span class="section-label">08 — Fotografías</span>
         <h2>Capturando el momento</h2>
+        <div class="divider">✦</div>
         <div class="two-col">
           <div class="two-col-text">
             <p>
@@ -162,13 +185,14 @@
       </div>
     </section>
 
-    <!-- CIERRE -->
+    <!-- ==================== CIERRE ==================== -->
     <section id="cierre">
       <div class="section-inner">
         <div class="cierre-inner">
           <div class="cierre-text">
             <span class="section-label">09 — Hasta pronto</span>
             <h2>¡Nos vemos el 10 de junio!</h2>
+            <div class="divider" style="justify-content: flex-start;">✦</div>
             <p>
               Gracias por formar parte de nuestra historia. Que este día sea
               tan especial para vosotros como lo es para nosotros.

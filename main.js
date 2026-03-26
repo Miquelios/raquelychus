@@ -1,5 +1,6 @@
 /* =========================================
-   RAQUEL & CHUS — Scripts
+   main.js — Scripts
+   RAQUEL & CHUS · Boda 2026
    ========================================= */
 
 // --- Cuenta atrás ---

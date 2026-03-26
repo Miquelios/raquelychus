@@ -1,0 +1,277 @@
+/* =========================================
+   sections.css — Estilos por sección
+   RAQUEL & CHUS · Boda 2026
+   ========================================= */
+
+/* =========================================
+   HERO
+   ========================================= */
+#hero {
+  min-height: 100vh;
+  padding: 0;
+}
+
+#hero .section-inner {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(246, 242, 235, 0.80);
+  padding: clamp(60px, 12vw, 120px) clamp(36px, 8vw, 80px);
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.hero-names {
+  font-family: 'Amsterdam Four', 'Cormorant Garamond', serif;
+  font-size: clamp(3.8rem, 11vw, 8rem);
+  font-weight: normal;
+  color: var(--garnacha);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.hero-date {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  color: var(--olivo);
+  margin-bottom: 2.5rem;
+}
+
+.hero-scroll {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-scroll::before,
+.hero-scroll::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--majorero);
+  opacity: 0.7;
+}
+
+/* =========================================
+   HISTORIA
+   ========================================= */
+/* usa estilos base de .section-inner — nada extra necesario */
+
+/* =========================================
+   FECHA & CUENTA ATRÁS
+   ========================================= */
+.fecha-big {
+  font-family: 'Amsterdam Four', 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--garnacha);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.fecha-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: var(--olivo);
+  margin-bottom: 2.5rem;
+}
+
+.countdown {
+  display: flex;
+  gap: clamp(16px, 5vw, 52px);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.countdown-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.countdown-number {
+  font-family: 'Amsterdam Four', 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  color: var(--garnacha);
+  line-height: 1;
+  min-width: 2.5ch;
+  text-align: center;
+}
+
+.countdown-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  color: var(--olivo);
+}
+
+/* =========================================
+   ITINERARIO — imagen responsive
+   ========================================= */
+.itinerario-img-wrap {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.itinerario-img-wrap .placeholder-img {
+  width: 100%;
+  aspect-ratio: 16 / 7;  /* horizontal en desktop */
+}
+
+.itinerario-img-wrap img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+/* =========================================
+   CONFIRMACIÓN
+   ========================================= */
+#confirmacion .section-inner {
+  background: rgba(107, 31, 43, 0.88);
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 4px 40px rgba(107, 31, 43, 0.2);
+}
+
+#confirmacion h2             { color: var(--arena); }
+#confirmacion p              { color: rgba(246, 242, 235, 0.8); }
+#confirmacion .section-label { color: var(--majorero); opacity: 0.85; }
+#confirmacion .divider       { color: var(--majorero); }
+#confirmacion .divider::before,
+#confirmacion .divider::after { background: var(--majorero); }
+
+.btn-confirmar {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 14px 52px;
+  border: 1px solid var(--majorero);
+  color: var(--majorero);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.28s, color 0.28s;
+}
+
+.btn-confirmar:hover {
+  background: var(--majorero);
+  color: var(--garnacha);
+}
+
+/* =========================================
+   DRESS CODE
+   ========================================= */
+/* usa estilos base de .section-inner */
+
+/* =========================================
+   REGALOS & FOTOGRAFÍAS — texto + imagen cuadrada
+   ========================================= */
+.two-col {
+  display: flex;
+  gap: clamp(24px, 4vw, 48px);
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.two-col-text           { flex: 1; min-width: 220px; }
+.two-col-text p         { margin-left: 0; margin-right: 0; }
+
+.two-col-img {
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.two-col-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================================
+   CIERRE — texto + imagen lateral
+   ========================================= */
+.cierre-inner {
+  display: flex;
+  gap: clamp(32px, 5vw, 60px);
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.cierre-text     { flex: 1; min-width: 220px; }
+.cierre-text p   { font-style: italic; font-size: 1.1rem; color: var(--text); margin-left: 0; }
+
+.cierre-img {
+  flex-shrink: 0;
+  width: 210px;
+  height: 310px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cierre-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================================
+   PLACEHOLDERS DE IMAGEN
+   ========================================= */
+.placeholder-img {
+  background: rgba(119, 139, 111, 0.15);
+  border: 1px dashed rgba(119, 139, 111, 0.4);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--olivo);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 12px,
+    rgba(119, 139, 111, 0.06) 12px,
+    rgba(119, 139, 111, 0.06) 24px
+  );
+}
+
+.placeholder-img span { position: relative; z-index: 1; }

@@ -1,0 +1,58 @@
+/* =========================================
+   responsive.css — Media queries
+   RAQUEL & CHUS · Boda 2026
+   ========================================= */
+
+@media (max-width: 640px) {
+
+  /* Tarjetas con menos padding en móvil */
+  .section-inner {
+    padding: clamp(36px, 7vw, 52px) clamp(18px, 5vw, 36px);
+  }
+
+  /* Fondo: en móvil quitamos el fixed para mejor rendimiento */
+  body {
+    background-attachment: scroll;
+    background-size: 100% auto;
+  }
+
+  /* Itinerario: imagen vertical en móvil */
+  .itinerario-img-wrap .placeholder-img {
+    aspect-ratio: 3 / 4;
+  }
+
+  /* Regalos / Fotografías: apilar en columna */
+  .two-col {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .two-col-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .two-col-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* Cierre: imagen debajo del texto */
+  .cierre-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .cierre-text p { margin-left: auto; margin-right: auto; }
+
+  .cierre-img {
+    width: 100%;
+    height: 240px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-names { font-size: 3rem; }
+  .countdown-number { font-size: 2.5rem; }
+}

@@ -223,7 +223,7 @@
 }
 
 .cierre-text     { flex: 1; min-width: 220px; }
-.cierre-text p   { font-style: italic; font-size: 1.1rem; color: var(--text); margin-left: 0; }
+.cierre-text p   { font-style: italic; font-size: 1.3rem; color: var(--text); margin-left: 0; }
 
 .cierre-img {
   flex-shrink: 0;

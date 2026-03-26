@@ -70,7 +70,7 @@ h1 { font-size: clamp(3rem, 9vw, 6.5rem); letter-spacing: 0.05em; color: var(--g
 h2 { font-size: clamp(1.8rem, 4vw, 3rem);  letter-spacing: 0.06em; color: var(--garnacha); margin-bottom: 1.2rem; }
 h3 { font-size: 1.4rem; letter-spacing: 0.07em; color: var(--parra); margin-bottom: 0.6rem; }
 
-p  { font-size: 1.05rem; color: var(--text-light); margin-bottom: 1rem; font-weight: 300; }
+p  { font-size: 1.3rem; color: var(--text); margin-bottom: 1rem; font-weight: 300; }
 
 a  { color: var(--garnacha); }
 

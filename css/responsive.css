@@ -21,6 +21,20 @@
     aspect-ratio: 3 / 4;
   }
 
+  .itinerario-img-wrap {
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .itinerario-img-wrap .img-desktop {
+    display: none;
+  }
+
+  .itinerario-img-wrap .img-mobile {
+    display: block;
+  }
+
   /* Regalos / Fotografías: apilar en columna */
   .two-col {
     flex-direction: column;

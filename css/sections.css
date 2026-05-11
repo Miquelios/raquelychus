@@ -8,21 +8,25 @@
    ========================================= */
 #hero {
   min-height: 100vh;
+  min-height: 100svh;
   padding: 0;
+  max-width: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#hero .section {
+#hero .section-outer {
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(246, 242, 235, 0.80);
   padding: clamp(60px, 12vw, 120px) clamp(36px, 8vw, 80px);
   margin: 0;
   border-radius: 0;
-  border: none;
-  box-shadow: none;
 }
 
 .hero-names {
@@ -50,6 +54,12 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
+}
+
+.hero-scroll:hover,
+.hero-scroll:focus-visible {
+  color: var(--garnacha);
 }
 
 .hero-scroll::before,
@@ -123,7 +133,10 @@
    ========================================= */
 .itinerario-img-wrap {
   margin-top: 2rem;
-  width: 100%;
+  width: min(130vw, 1400px);
+  max-width: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .itinerario-img-wrap .placeholder-img {
@@ -136,6 +149,15 @@
   width: 100%;
   border-radius: 4px;
   display: block;
+}
+
+/* Desktop-first visibility: horizontal on large screens */
+.itinerario-img-wrap .img-desktop {
+  display: block;
+}
+
+.itinerario-img-wrap .img-mobile {
+  display: none;
 }
 
 /* =========================================
@@ -230,6 +252,14 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.qr-img {
+  display: block;
+  width: clamp(110px, 18vw, 150px);
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem auto 0;
 }
 
 /* =========================================

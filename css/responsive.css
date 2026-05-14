@@ -17,9 +17,11 @@
   }
 
   /* Itinerario: imagen vertical en móvil */
+  /* Unused: no .placeholder-img in current HTML
   .itinerario-img-wrap .placeholder-img {
     aspect-ratio: 3 / 4;
   }
+  */
 
   .itinerario-img-wrap {
     width: 100%;
@@ -35,21 +37,27 @@
     display: block;
   }
 
+  #historia .section-outer {
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
+
   .historia-content {
-    grid-template-columns: 1fr;
+    min-height: auto;
+    background-image: none;
+    justify-content: center;
+    padding: 16px;
   }
 
   .historia-text {
+    width: 100%;
     text-align: center;
   }
 
-  .como-empezo-todo {
-    width: min(100%, 600px);
+  .text-title {
+    width: min(100%, 1024px);
     margin-bottom: 1rem;
-  }
-
-  .nuestra-historia-img {
-    width: min(100%, 300px);
   }
 
   /* Regalos / Fotografías: apilar en columna */
@@ -91,9 +99,11 @@
 }
 
 @media (max-width: 400px) {
+  /* Unused: .hero-names is not rendered in current HTML
   .hero-names {
     font-size: 3rem;
   }
+  */
 
   .countdown-number {
     font-size: 2.5rem;

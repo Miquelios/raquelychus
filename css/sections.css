@@ -29,6 +29,21 @@
   border-radius: 0;
 }
 
+.hero-title {
+  display: block;
+  width: min(100%, 700px);
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.text-title {
+  display: block;
+  width: min(100%, 1024px);
+  height: auto;
+  margin: 0 auto 1rem;
+}
+
+/* Unused with current HTML (hero text replaced by image title)
 .hero-names {
   font-family: 'Amsterdam Four', 'Cormorant Garamond', serif;
   font-size: clamp(3.8rem, 11vw, 8rem);
@@ -45,6 +60,7 @@
   letter-spacing: 0.3em;
   color: var(--olivo);
 }
+*/
 
 .hero-scroll {
   font-size: 0.7rem;
@@ -75,40 +91,45 @@
 /* =========================================
    HISTORIA
    ========================================= */
-.historia-content {
-  display: grid;
-  grid-template-columns: minmax(280px, 1.1fr) minmax(0, 1fr);
-  gap: clamp(16px, 3vw, 32px);
-  align-items: center;
+#historia {
+  max-width: none;
+  width: 100%;
 }
 
-.como-empezo-todo {
-  display: block;
-  width: min(100%, 1024px);
-  height: auto;
-  margin: 0 auto 1.2rem;
+#historia .section-outer {
+  width: min(120vw, 1360px);
+  max-width: max(100px, 100%);
+  /* position: center; */
+  /* transform: translateX(-50%); */
+}
+
+.historia-content {
+  width: min(100%, 1260px);
+  margin: 0 auto;
+  aspect-ratio: 768 / 450;
+  min-height: clamp(360px, 56vw, 760px);
+
+  background-image: url('../images/backgrounds/nuestra-historia.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75% auto;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: clamp(16px, 3vw, 32px);
+  padding-top: 0px;
 }
 
 .historia-text {
-  text-align: left;
-  max-width: 34ch;
+  width: min(48%, 512px);
+  text-align: center;
 }
 
 .historia-text p {
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
+  line-height: 1.6;
   max-width: none;
-}
-
-.historia-media {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nuestra-historia-img {
-  display: block;
-  width: min(100%, 460px);
-  height: auto;
 }
 
 /* =========================================
@@ -160,6 +181,14 @@
   font-size: 0.75rem;
   letter-spacing: 0.18em;
   color: var(--olivo);
+}
+
+.img-ubi {
+  display: block;
+  width: min(130vw, 1400px);
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem auto 0;
 }
 
 /* =========================================

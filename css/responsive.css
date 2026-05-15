@@ -14,20 +14,13 @@
   body {
     /* background-attachment: scroll;
     background-size: 100% auto; */
-    background-image: url('../images/backgrounds/Mobile-background-dinámico.gif');
-    background-size: 100% auto;
-    background-position: top center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-image: url('../images/backgrounds/background-mobile.svg');
+    background-size: contain;
+    background-position: top;
+    background-attachment: scroll;
+    background-repeat: repeat;
     background-color: var(--arena);
   }
-
-  /* Itinerario: imagen vertical en móvil */
-  /* Unused: no .placeholder-img in current HTML
-  .itinerario-img-wrap .placeholder-img {
-    aspect-ratio: 3 / 4;
-  }
-  */
 
   .itinerario-img-wrap {
     width: 100%;
@@ -100,17 +93,20 @@
     height: 240px;
   }
 
+  .countdown-number {
+    font-size: clamp(1rem, 1.8rem, 2.5rem);
+  }
+
+  .countdown-label {
+    font-size: 0.75rem;
+  }
+
   .couple-behind {
-    width: min(86vw, 340px);
+    width: min(86vw, 200px);
   }
 }
 
 @media (max-width: 400px) {
-  /* Unused: .hero-names is not rendered in current HTML
-  .hero-names {
-    font-size: 3rem;
-  }
-  */
 
   .countdown-number {
     font-size: 2.5rem;

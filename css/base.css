@@ -201,3 +201,13 @@ section {
   background: var(--majorero);
   opacity: 0.6;
 }
+
+.site-footer {
+  position: static;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  line-height: 0;
+}

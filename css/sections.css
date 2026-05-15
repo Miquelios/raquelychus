@@ -38,7 +38,7 @@
 
 .text-title {
   display: block;
-  width: min(100%, 1024px);
+  width: min(100%, 600px);
   height: auto;
   margin: 0 auto 1rem;
 }
@@ -109,7 +109,7 @@
   aspect-ratio: 768 / 450;
   min-height: clamp(360px, 56vw, 760px);
 
-  background-image: url('../images/backgrounds/nuestra-historia.svg');
+  background-image: url('../images/backgrounds/nuestra_historia_v2.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 75% auto;

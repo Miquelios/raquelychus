@@ -207,7 +207,13 @@
   letter-spacing: 0.15em;
   text-decoration: none;
   border-radius: 2px;
-  transition: background 0.28s, color 0.28s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-text {
+  display: inline-block;
+  position: relative;
 }
 
 .btn-confirmar:hover {

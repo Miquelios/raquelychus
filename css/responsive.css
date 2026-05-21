@@ -15,7 +15,7 @@
     /* background-attachment: scroll;
     background-size: 100% auto; */
     background-image: url('../images/backgrounds/background-mobile.gif');
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
     background-attachment: fixed;
     background-repeat: no-repeat;

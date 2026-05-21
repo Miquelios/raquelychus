@@ -6,15 +6,15 @@
 @media (max-width: 640px) {
 
   /* Tarjetas con menos padding en móvil */
-  .section-inner {
+  /* .section-inner {
     padding: clamp(36px, 7vw, 52px) clamp(18px, 5vw, 36px);
-  }
+  } */
 
   /* Fondo: en móvil quitamos el fixed para mejor rendimiento */
   body {
     /* background-attachment: scroll;
     background-size: 100% auto; */
-    background-image: url('../images/backgrounds/background-mobile.gif');
+    background-image: url('../images/backgrounds/5-elementos.gif');
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;

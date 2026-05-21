@@ -394,7 +394,24 @@
   margin: 0;
   padding: 0;
   transform: none;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.falling-layer {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
   pointer-events: none;
+  z-index: 9999;
+}
+
+.falling-item {
+  position: fixed;
+  top: -240px;
+  width: 200px;
+  height: auto;
+  will-change: transform, opacity;
 }
 
 /* =========================================

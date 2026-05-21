@@ -104,6 +104,10 @@
   .couple-behind {
     width: min(86vw, 200px);
   }
+
+  .falling-item {
+    width: 140px;
+  }
 }
 
 @media (max-width: 400px) {

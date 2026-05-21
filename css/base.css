@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Droid Serif';
+  src: url('../fonts/DroidSerif.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* --- Paleta oficial de la boda --- */
 :root {
   /* Principales */
@@ -53,14 +60,14 @@
   padding: 0;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
   font-size: 16px;
-}
+} */
 
 /* --- Body + fondo --- */
 body {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Droid Serif', serif;
   font-weight: 400;
   color: var(--text);
   line-height: 1.75;
@@ -106,8 +113,14 @@ h3 {
   margin-bottom: 0.6rem;
 }
 
+h4 {
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.6rem;
+}
+
 p {
-  font-size: 1.3rem;
+  font-size: 0.95rem;
   color: var(--text);
   margin-bottom: 1rem;
   font-weight: 300;
@@ -164,9 +177,9 @@ section {
 /* Etiqueta de sección */
 .section-label {
   display: block;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Droid Serif', serif;
   font-size: 0.85rem;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: bold;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -187,7 +200,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   color: var(--majorero);
   font-size: 1rem;
 }

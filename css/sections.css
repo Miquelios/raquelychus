@@ -43,6 +43,7 @@
   margin: 0 auto 1rem;
 }
 
+/* UNUSED (current markup has no .hero-scroll element)
 .hero-scroll {
   font-size: 0.7rem;
   letter-spacing: 0.2em;
@@ -68,6 +69,7 @@
   background: var(--majorero);
   opacity: 0.7;
 }
+*/
 
 /* =========================================
    HISTORIA
@@ -116,13 +118,15 @@
 /* =========================================
    FECHA & CUENTA ATRÁS
    ========================================= */
+/* UNUSED (current markup has no .fecha-big element)
 .fecha-big {
-  font-family: 'Amsterdam Four', 'Cormorant Garamond', serif;
+  font-family: 'Amsterdam Four', 'Droid Serif', serif;
   font-size: clamp(2rem, 5vw, 3.5rem);
   color: var(--garnacha);
   letter-spacing: 0.05em;
   margin-bottom: 0.4rem;
 }
+*/
 
 .img-ubi {
   display: block;
@@ -143,11 +147,12 @@
   transform: translateX(-50%);
 }
 
+/* UNUSED (current itinerario markup has no .placeholder-img inside .itinerario-img-wrap)
 .itinerario-img-wrap .placeholder-img {
   width: 100%;
   aspect-ratio: 16 / 7;
-  /* horizontal en desktop */
 }
+*/
 
 .itinerario-img-wrap img {
   width: 100%;
@@ -173,18 +178,22 @@
   box-shadow: 0 4px 40px rgba(107, 31, 43, 0.2);
 }
 
+/* UNUSED (current confirmacion markup has no h2)
 #confirmacion h2 {
   color: var(--arena);
 }
+*/
 
 #confirmacion p {
   color: rgba(246, 242, 235, 0.8);
 }
 
+/* UNUSED (current confirmacion markup has no .section-label)
 #confirmacion .section-label {
   color: var(--majorero);
   opacity: 0.85;
 }
+*/
 
 #confirmacion .divider {
   color: var(--majorero);
@@ -201,7 +210,7 @@
   padding: 14px 52px;
   border: 1px solid var(--majorero);
   color: var(--majorero);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Droid Serif', serif;
   font-style: italic;
   font-size: 1rem;
   letter-spacing: 0.15em;
@@ -291,6 +300,7 @@
 /* =========================================
    CIERRE — texto + imagen lateral
    ========================================= */
+/* UNUSED (current cierre markup has no .cierre-inner/.cierre-text structure)
 .cierre-inner {
   display: flex;
   gap: clamp(32px, 5vw, 60px);
@@ -311,6 +321,7 @@
   color: var(--text);
   margin-left: 0;
 }
+*/
 
 .monograma {
   display: block;
@@ -319,6 +330,7 @@
   margin: 1.5rem auto 0;
 }
 
+/* UNUSED (current cierre markup has no .cierre-img)
 .cierre-img {
   flex-shrink: 0;
   width: 210px;
@@ -333,9 +345,10 @@
   object-fit: cover;
   display: block;
 }
+*/
 
 .fecha-sub {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Droid Serif', serif;
   font-style: italic;
   font-size: 0.85rem;
   letter-spacing: 0.2em;
@@ -358,7 +371,7 @@
 }
 
 .countdown-number {
-  font-family: 'Amsterdam Four', 'Cormorant Garamond', serif;
+  font-family: 'Amsterdam Four', 'Droid Serif', serif;
   font-size: clamp(2.8rem, 7vw, 4rem);
   color: var(--garnacha);
   line-height: 1;
@@ -367,7 +380,7 @@
 }
 
 .countdown-label {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Droid Serif', serif;
   font-style: italic;
   font-size: 1rem;
   letter-spacing: 0.18em;
@@ -387,6 +400,7 @@
 /* =========================================
    PLACEHOLDERS DE IMAGEN
    ========================================= */
+/* UNUSED (current markup has no .placeholder-img blocks)
 .placeholder-img {
   background: rgba(119, 139, 111, 0.15);
   border: 1px dashed rgba(119, 139, 111, 0.4);
@@ -395,7 +409,7 @@
   align-items: center;
   justify-content: center;
   color: var(--olivo);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Droid Serif', serif;
   font-style: italic;
   font-size: 0.85rem;
   letter-spacing: 0.12em;
@@ -420,3 +434,4 @@
   position: relative;
   z-index: 1;
 }
+*/

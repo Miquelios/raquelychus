@@ -1,1 +1,2 @@
 *.gif filter=lfs diff=lfs merge=lfs -text
+Background-6-elementos.gif filter=lfs diff=lfs merge=lfs -text

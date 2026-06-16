@@ -17,23 +17,11 @@
   justify-content: center;
 }
 
-/* #hero .section-outer {
-  min-height: 100vh;
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: clamp(60px, 12vw, 120px) clamp(36px, 8vw, 80px);
-  margin: 0;
-  border-radius: 0;
-} */
-
 .hero-title {
   display: block;
   width: min(100%, 700px);
   height: auto;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
 }
 
 .text-title {
@@ -44,34 +32,6 @@
   margin: 0 auto 1rem;
 }
 
-/* UNUSED (current markup has no .hero-scroll element)
-.hero-scroll {
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--text-light);
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
-
-.hero-scroll:hover,
-.hero-scroll:focus-visible {
-  color: var(--garnacha);
-}
-
-.hero-scroll::before,
-.hero-scroll::after {
-  content: '';
-  display: block;
-  width: 32px;
-  height: 1px;
-  background: var(--majorero);
-  opacity: 0.7;
-}
-*/
-
 /* =========================================
    HISTORIA
    ========================================= */
@@ -79,35 +39,14 @@
   max-width: none;
   width: 100%;
 }
-/*
- #historia .section-outer {
-  width: min(120vw, 1360px);
-  max-width: max(100px, 100%);
-  position: center;
-  transform: translateX(-50%);
-}*/
 
-.historia-content {
-  width: min(100%, 1260px);
-  margin: 0 auto;
-  aspect-ratio: 768 / 450;
-  min-height: clamp(360px, 56vw, 760px);
-
-  background-image: url('../images/backgrounds/nuestra_historia_v2.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 75% auto;
-
+.historia-text {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: clamp(16px, 3vw, 32px);
-  padding-top: 0px;
-}
-
-.historia-text {
   width: min(48%, 512px);
   text-align: center;
+  margin: 0 auto;
 }
 
 .historia-text p {
@@ -119,15 +58,6 @@
 /* =========================================
    FECHA & CUENTA ATRÁS
    ========================================= */
-/* UNUSED (current markup has no .fecha-big element)
-.fecha-big {
-  font-family: 'Amsterdam Four', 'Droid Serif', serif;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  color: var(--garnacha);
-  letter-spacing: 0.05em;
-  margin-bottom: 0.4rem;
-}
-*/
 
 .img-ubi {
   display: block;
@@ -147,13 +77,6 @@
   margin-left: 50%;
   transform: translateX(-50%);
 }
-
-/* UNUSED (current itinerario markup has no .placeholder-img inside .itinerario-img-wrap)
-.itinerario-img-wrap .placeholder-img {
-  width: 100%;
-  aspect-ratio: 16 / 7;
-}
-*/
 
 .itinerario-img-wrap img {
   width: 100%;
@@ -183,22 +106,9 @@
   width: 100%;
 }
 
-/* UNUSED (current confirmacion markup has no h2)
-#confirmacion h2 {
-  color: var(--arena);
-}
-*/
-
 #confirmacion p {
   color: rgba(246, 242, 235, 0.8);
 }
-
-/* UNUSED (current confirmacion markup has no .section-label)
-#confirmacion .section-label {
-  color: var(--majorero);
-  opacity: 0.85;
-}
-*/
 
 #confirmacion .divider {
   color: var(--majorero);
@@ -305,28 +215,6 @@
 /* =========================================
    CIERRE — texto + imagen lateral
    ========================================= */
-/* UNUSED (current cierre markup has no .cierre-inner/.cierre-text structure)
-.cierre-inner {
-  display: flex;
-  gap: clamp(32px, 5vw, 60px);
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: left;
-}
-
-.cierre-text {
-  flex: 1;
-  min-width: 220px;
-}
-
-.cierre-text p {
-  font-style: italic;
-  font-size: 1.3rem;
-  color: var(--text);
-  margin-left: 0;
-}
-*/
 
 .monograma {
   display: block;
@@ -334,23 +222,6 @@
   height: auto;
   margin: 1.5rem auto 0;
 }
-
-/* UNUSED (current cierre markup has no .cierre-img)
-.cierre-img {
-  flex-shrink: 0;
-  width: 210px;
-  height: 310px;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.cierre-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-*/
 
 .fecha-sub {
   font-family: 'Droid Serif', serif;
@@ -418,42 +289,3 @@
   height: auto;
   will-change: transform, opacity;
 }
-
-/* =========================================
-   PLACEHOLDERS DE IMAGEN
-   ========================================= */
-/* UNUSED (current markup has no .placeholder-img blocks)
-.placeholder-img {
-  background: rgba(119, 139, 111, 0.15);
-  border: 1px dashed rgba(119, 139, 111, 0.4);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--olivo);
-  font-family: 'Droid Serif', serif;
-  font-style: italic;
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.placeholder-img::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(45deg,
-      transparent,
-      transparent 12px,
-      rgba(119, 139, 111, 0.06) 12px,
-      rgba(119, 139, 111, 0.06) 24px);
-}
-
-.placeholder-img span {
-  position: relative;
-  z-index: 1;
-}
-*/

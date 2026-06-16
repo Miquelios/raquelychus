@@ -158,13 +158,17 @@ section div p {
 .section-label {
   display: block;
   font-family: 'Droid Serif', serif;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   /* font-style: italic; */
-  font-weight: bold;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--olivo);
   margin-bottom: 14px;
+}
+
+.section-label--strong {
+  font-weight: bold;
+  font-size: 0.95rem;
 }
 
 /* --- Divisor decorativo --- */

@@ -122,15 +122,16 @@
 .btn-confirmar {
   display: inline-block;
   margin-top: 0.75rem;
-  padding: 14px 52px;
-  border: 1px solid var(--majorero);
-  color: var(--majorero);
+  padding: 14px 42px;
+  /* border: 1px solid var(--majorero); */
+  color: var(--garnacha);
+  background: var(--arena);
   font-family: 'Droid Serif', serif;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.85rem;
   letter-spacing: 0.15em;
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 5px;
   position: relative;
   overflow: hidden;
 }
@@ -141,7 +142,7 @@
 }
 
 .btn-confirmar:hover {
-  background: var(--majorero);
+  background: var(--arena);
   color: var(--garnacha);
 }
 

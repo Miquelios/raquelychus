@@ -127,7 +127,7 @@
   color: var(--garnacha);
   background: var(--arena);
   font-family: 'Droid Serif', serif;
-  font-style: italic;
+  font-weight: bold;
   font-size: 0.85rem;
   letter-spacing: 0.15em;
   text-decoration: none;

@@ -30,6 +30,70 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
+// --- Background music ---
+const music = document.getElementById('bg-music');
+const musicBtn = document.getElementById('music-btn');
+const iconPlay = document.getElementById('music-icon-play');
+const iconPause = document.getElementById('music-icon-pause');
+
+const TARGET_VOLUME = 0.5;
+const FADE_DURATION = 2000; // ms
+
+function fadeInMusic() {
+  if (!music || music._started) return;
+  music._started = true;
+  music.volume = 0;
+  music.play().then(() => {
+    iconPlay.style.display = 'none';
+    iconPause.style.display = 'block';
+    const steps = 40;
+    const interval = FADE_DURATION / steps;
+    const step = TARGET_VOLUME / steps;
+    let current = 0;
+    const fade = setInterval(() => {
+      current += step;
+      if (current >= TARGET_VOLUME) {
+        music.volume = TARGET_VOLUME;
+        clearInterval(fade);
+      } else {
+        music.volume = current;
+      }
+    }, interval);
+  }).catch(() => {
+    // Autoplay blocked — reset flag so button can retry
+    music._started = false;
+  });
+}
+
+// Start on first scroll or click anywhere
+function onFirstInteraction() {
+  fadeInMusic();
+  window.removeEventListener('scroll', onFirstInteraction);
+  window.removeEventListener('click', onFirstInteraction);
+}
+window.addEventListener('scroll', onFirstInteraction, { once: true });
+window.addEventListener('click', onFirstInteraction, { once: true });
+
+// Floating button — manual toggle
+if (musicBtn) {
+  musicBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // prevent double-triggering onFirstInteraction
+    if (!music._started) {
+      fadeInMusic();
+      return;
+    }
+    if (music.paused) {
+      music.play();
+      iconPlay.style.display = 'none';
+      iconPause.style.display = 'block';
+    } else {
+      music.pause();
+      iconPlay.style.display = 'block';
+      iconPause.style.display = 'none';
+    }
+  });
+}
+
 // --- Magnetic Button Effect ---
 const btn = document.querySelector('.btn-confirmar');
 const btnText = document.querySelector('.btn-text');

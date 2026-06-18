@@ -201,3 +201,31 @@ section div p {
   padding-top: 16px;
   line-height: 0;
 }
+
+/* --- Music button --- */
+.music-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--garnacha);
+  background: var(--arena);
+  color: var(--garnacha);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s, transform 0.2s;
+  opacity: 0.85;
+}
+
+.music-btn:hover {
+  background: var(--garnacha);
+  color: var(--arena);
+  transform: scale(1.08);
+  opacity: 1;
+}

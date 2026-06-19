@@ -11,10 +11,10 @@
     /* background-attachment: scroll;
     background-size: 100% auto; */
     background-image: url('../images/backgrounds/mobile-background.svg');
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
     background-attachment: fixed;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-color: var(--arena);
     margin-right: 7%;
     margin-left: 7%;

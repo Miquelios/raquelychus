@@ -5,7 +5,6 @@
 
 @media (max-width: 640px) {
 
-
   /* Fondo: en móvil quitamos el fixed para mejor rendimiento */
   body {
     /* background-attachment: scroll;

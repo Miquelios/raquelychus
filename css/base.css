@@ -69,7 +69,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  background-image: url('../images/backgrounds/background.gif');
+  background-image: url('../images/backgrounds/web-background.svg');
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;

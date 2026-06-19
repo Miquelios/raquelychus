@@ -48,12 +48,8 @@ function fadeInMusic() {
     });
 }
 
-// Start on first scroll or click anywhere
-function onFirstInteraction() {
-    fadeInMusic();
-}
-window.addEventListener('scroll', onFirstInteraction, { once: true });
-window.addEventListener('click', onFirstInteraction, { once: true });
+// Expose a controlled starter for the intro letter flow.
+window.startBgMusic = fadeInMusic;
 
 // Floating button — manual toggle
 if (musicBtn) {

@@ -1,14 +1,17 @@
 // --- Footer click: falling icons effect (GSAP + sway + retrigger) ---
 const fallingAssets = [
-  'images/falling_v2/cocktail.svg',
-  'images/falling_v2/double-heart.svg',
-  'images/falling_v2/grapes.svg',
-  'images/falling_v2/oil.svg',
-  'images/falling_v2/olive-branch.svg',
-  'images/falling_v2/party.svg',
-  'images/falling_v2/single-heart.svg',
-  'images/falling_v2/wine.svg',
-  'images/falling_v2/photos.svg'
+  'images/falling/confeti.svg',
+  'images/falling/corazon.svg',
+  'images/falling/corazones.svg'
+  // 'images/falling_v2/cocktail.svg',
+  // 'images/falling_v2/double-heart.svg',
+  // 'images/falling_v2/grapes.svg',
+  // 'images/falling_v2/oil.svg',
+  // 'images/falling_v2/olive-branch.svg',
+  // 'images/falling_v2/party.svg',
+  // 'images/falling_v2/single-heart.svg',
+  // 'images/falling_v2/wine.svg',
+  // 'images/falling_v2/photos.svg'
 ];
 
 const footerTrigger = document.querySelector('.couple-behind');

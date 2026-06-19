@@ -22,11 +22,11 @@
 /* --- Paleta oficial de la boda --- */
 :root {
   /* Principales */
-/* rojo vino */
+  /* rojo vino */
   --garnacha: #6B1F2B;
-/* verde olivo claro */
+  /* verde olivo claro */
   --olivo: #778B6F;
-  
+
 
   /* Secundarios */
   /* púrpura atardecer */
@@ -68,14 +68,27 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* fallback */
+  background-color: var(--arena);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Places the image behind your text/content */
 
   background-image: url('../images/backgrounds/web-background.svg');
   background-size: cover;
-  background-position: top center;
-  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--arena);
-  /* fallback */
+
+  /* Optional: Prevents modern iOS elastic scrolling bounce from breaking it */
+  will-change: transform;
 }
 
 /* --- Tipografía --- */

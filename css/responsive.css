@@ -22,7 +22,7 @@
     z-index: -1;
     /* Places the image behind your text/content */
 
-    background-image: url('../images/backgrounds/mobile-background.svg');
+    background-image: url('../images/backgrounds/mobile-background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

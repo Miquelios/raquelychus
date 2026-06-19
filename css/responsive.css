@@ -10,7 +10,7 @@
     /* background-attachment: scroll;
     background-size: 100% auto; */
     background-image: url('../images/backgrounds/mobile-background.svg');
-    background-size: cover;
+    background-size: contain;
     background-position: top center;
     background-attachment: fixed;
     background-repeat: no-repeat;

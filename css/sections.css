@@ -56,18 +56,6 @@
 }
 
 /* =========================================
-   FECHA & CUENTA ATRÁS
-   ========================================= */
-
-.img-ubi {
-  display: block;
-  width: min(130vw, 1400px);
-  max-width: 100%;
-  height: auto;
-  margin: 1.25rem auto 0;
-}
-
-/* =========================================
    ITINERARIO — imagen responsive
    ========================================= */
 .itinerario-img-wrap {
@@ -117,15 +105,6 @@
   font-weight: bold;
 }
 
-#confirmacion .divider {
-  color: var(--majorero);
-}
-
-#confirmacion .divider::before,
-#confirmacion .divider::after {
-  background: var(--majorero);
-}
-
 .btn-confirmar {
   display: inline-block;
   margin-top: 0.75rem;
@@ -167,49 +146,6 @@
   display: block;
   width: 100%;
   min-height: 420px;
-}
-
-/* =========================================
-   DRESS CODE
-   ========================================= */
-/* usa estilos base de .section-inner */
-
-/* =========================================
-   REGALOS & FOTOGRAFÍAS — texto + imagen cuadrada
-   ========================================= */
-.two-col {
-  display: flex;
-  gap: clamp(24px, 4vw, 48px);
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: left;
-  margin-top: 1rem;
-}
-
-.two-col-text {
-  flex: 1;
-  min-width: 220px;
-}
-
-.two-col-text p {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.two-col-img {
-  flex-shrink: 0;
-  width: 160px;
-  height: 160px;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.two-col-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 .qr-img {

@@ -79,33 +79,6 @@ body {
 }
 
 /* --- Tipografía --- */
-h1,
-h2,
-h3 {
-  font-family: 'Amsterdam Four', serif;
-  font-weight: normal;
-  line-height: 1.15;
-}
-
-h1 {
-  font-size: clamp(3rem, 9vw, 6.5rem);
-  letter-spacing: 0.05em;
-  color: var(--garnacha);
-}
-
-h2 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  letter-spacing: 0.06em;
-  color: var(--garnacha);
-  margin-bottom: 1.2rem;
-}
-
-h3 {
-  font-size: 1.4rem;
-  letter-spacing: 0.07em;
-  color: var(--parra);
-  margin-bottom: 0.6rem;
-}
 
 h4 {
   font-size: 1.4rem;
@@ -170,26 +143,7 @@ section div p {
   font-size: 0.95rem;
 }
 
-/* --- Divisor decorativo --- */
-.divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  margin: 1rem auto;
-  color: var(--majorero);
-  font-size: 1rem;
-}
 
-.divider::before,
-.divider::after {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 1px;
-  background: var(--majorero);
-  opacity: 0.6;
-}
 
 .site-footer {
   position: static;

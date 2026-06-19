@@ -34,19 +34,6 @@
     display: block;
   }
 
-  #historia .section-outer {
-    width: 100%;
-    margin-left: 0;
-    transform: none;
-  }
-
-  .historia-content {
-    min-height: auto;
-    background-image: none;
-    justify-content: center;
-    padding: 16px;
-  }
-
   .historia-text {
     width: 100%;
     text-align: center;
@@ -59,39 +46,6 @@
 
   #confirmacion {
     background-image: url('../images/backgrounds/mobile-confirmar-asistencia.svg');
-  }
-
-  /* Regalos / Fotografías: apilar en columna */
-  .two-col {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .two-col-text p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .two-col-img {
-    width: 140px;
-    height: 140px;
-  }
-
-  /* Cierre: imagen debajo del texto */
-  .cierre-inner {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .cierre-text p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .cierre-img {
-    width: 100%;
-    height: 240px;
   }
 
   .countdown-number {

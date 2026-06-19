@@ -9,39 +9,16 @@ const iconPlay = document.getElementById('music-icon-play');
 const iconPause = document.getElementById('music-icon-pause');
 
 const TARGET_VOLUME = 0.5;
-const FADE_DURATION = 2000; // ms
 
-if (music) {
-    music.muted = true;
-    music.volume = 0;
-    music.play().catch(() => {
-        // Some browsers may still block autoplay; first interaction will retry.
-    });
-}
-
-function fadeInMusic() {
+function startBgMusic() {
     if (!music || music._started) return;
     music._started = true;
     music.muted = false;
+    music.volume = TARGET_VOLUME;
 
-    const resumePlayback = music.paused ? music.play() : Promise.resolve();
-
-    resumePlayback.then(() => {
+    music.play().then(() => {
         iconPlay.style.display = 'none';
         iconPause.style.display = 'block';
-        const steps = 40;
-        const interval = FADE_DURATION / steps;
-        const step = TARGET_VOLUME / steps;
-        let current = 0;
-        const fade = setInterval(() => {
-            current += step;
-            if (current >= TARGET_VOLUME) {
-                music.volume = TARGET_VOLUME;
-                clearInterval(fade);
-            } else {
-                music.volume = current;
-            }
-        }, interval);
     }).catch(() => {
         music._started = false;
         music.muted = true;
@@ -49,14 +26,14 @@ function fadeInMusic() {
 }
 
 // Expose a controlled starter for the intro letter flow.
-window.startBgMusic = fadeInMusic;
+window.startBgMusic = startBgMusic;
 
 // Floating button — manual toggle
 if (musicBtn) {
     musicBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         if (!music._started) {
-            fadeInMusic();
+            startBgMusic();
             return;
         }
         if (music.paused) {

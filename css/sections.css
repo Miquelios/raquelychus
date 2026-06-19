@@ -96,18 +96,25 @@
 /* =========================================
    CONFIRMACIÓN
    ========================================= */
+#confirmacion {
+  background-image: url('../images/backgrounds/web-confirmar-asistencia.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 #confirmacion .section-inner {
-  background: rgba(107, 31, 43, 0.88);
-  border-color: rgba(212, 175, 55, 0.3);
+  /* border-color: rgba(212, 175, 55, 0.3);
   box-shadow: 0 4px 40px rgba(107, 31, 43, 0.2);
-  border-radius: 8px;
+  border-radius: 8px; */
   padding: clamp(36px, 7vw, 52px) clamp(24px, 5vw, 40px);
   max-width: none;
   width: 100%;
 }
 
 #confirmacion p {
-  color: rgba(246, 242, 235, 0.8);
+  color: rgba(255, 255, 255);
+  font-weight: bold;
 }
 
 #confirmacion .divider {
@@ -122,13 +129,13 @@
 .btn-confirmar {
   display: inline-block;
   margin-top: 0.75rem;
-  padding: 14px 42px;
+  padding: 14px 22px;
   /* border: 1px solid var(--majorero); */
   color: var(--garnacha);
   background: var(--arena);
   font-family: 'Droid Serif', serif;
   font-weight: bold;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-decoration: none;
   border-radius: 5px;

@@ -57,6 +57,10 @@
     margin-bottom: 1rem;
   }
 
+  #confirmacion {
+    background-image: url('../images/backgrounds/mobile-confirmar-asistencia.svg');
+  }
+
   /* Regalos / Fotografías: apilar en columna */
   .two-col {
     flex-direction: column;

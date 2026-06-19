@@ -27,7 +27,7 @@ function launchFallingEffectGSAP() {
 
   const totalImages = 10;
   let completed = 0;
-  const itemWidth = window.matchMedia('(max-width: 640px)').matches ? 140 : 200;
+  const itemWidth = 50;
 
   for (let i = 0; i < totalImages; i += 1) {
     const img = document.createElement('img');
@@ -44,6 +44,7 @@ function launchFallingEffectGSAP() {
     img.alt = '';
     img.style.left = `${startX}px`;
     img.style.opacity = '0';
+    img.width = 50;
 
     layer.appendChild(img);
 

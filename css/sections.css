@@ -40,6 +40,10 @@
   width: 100%;
 }
 
+#historia .text-title.titulo {
+  margin-bottom: 0;
+}
+
 .historia-text {
   display: flex;
   justify-content: flex-end;
@@ -59,7 +63,7 @@
    ITINERARIO — imagen responsive
    ========================================= */
 .itinerario-img-wrap {
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: min(130vw, 1400px);
   max-width: none;
   margin-left: 50%;
@@ -70,6 +74,11 @@
   width: 100%;
   border-radius: 4px;
   display: block;
+}
+
+#itinerario .text-title.itinerario {
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 /* Desktop-first visibility: horizontal on large screens */
@@ -102,7 +111,6 @@
 
 #confirmacion p {
   color: rgba(255, 255, 255);
-  font-weight: bold;
 }
 
 .btn-confirmar {
@@ -163,15 +171,36 @@
   text-align: center;
 }
 
+#map .text-title.map {
+  margin-top: 1rem;
+}
+
+#dresscode .text-title.dresscode {
+  margin-top: 4rem;
+}
+
+#fotografias .text-title.fotografias {
+  margin-top: 2rem;
+}
+
+#regalos .text-title.regalos {
+  margin-top: 3rem;
+}
+
 /* =========================================
    CIERRE — texto + imagen lateral
    ========================================= */
+
+#signature {
+  margin-bottom: 0;
+}
 
 .monograma {
   display: block;
   width: min(100%, 140px);
   height: auto;
   margin: 0 auto 0;
+  margin-bottom: 2rem;
 }
 
 .fecha-sub {

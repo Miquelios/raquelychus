@@ -56,6 +56,10 @@
     margin-bottom: 1rem;
   }
 
+  #historia .text-title.titulo {
+    margin-bottom: 0;
+  }
+
   #confirmacion {
     background-image: url('../images/backgrounds/mobile-confirmar-asistencia.svg');
   }
